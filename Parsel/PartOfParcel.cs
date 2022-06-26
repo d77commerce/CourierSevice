@@ -1,12 +1,14 @@
-﻿namespace Parsel
+﻿using Parcel.Contracts;
+
+namespace Parsel
 {
-    public class PartOfParcel
+    public class PartOfParcel : IParcel
     {
-        int Id { get; set; }
-        double Kg { get; set; }
-        double Height { get; set; }
-        double Width { get; set; }
-        double Length { get; set; }
-        bool IsFragile { get; set; } = false;
+       public int Id { get; set; }
+      public  double Kg { get; set; }
+      public  double Height { get; set; }
+       public double Width { get; set; }
+      public  double Length { get; set; }
+       public bool IsFragile { get; set; } = false;
     }
 }

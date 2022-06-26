@@ -15,7 +15,7 @@ namespace PersonsAndCustomers
         private int dataOfBirth;
         private string email;
         private int phoneNo;
-        private string sity;
+        private string city;
         private string street;
         private string streetNo;
         private string secondLineAddress;
@@ -40,7 +40,7 @@ namespace PersonsAndCustomers
         public string SecondName { get => secondName; set => secondName = value; }
 
         public int PhoneNo { get => phoneNo; set => phoneNo = value; }
-        public string Sity { get => sity; set => sity = value; }
+        public string Sity { get => city; set => city = value; }
         public string Street { get => street; set => street = value; }
         public string StreetNo { get => streetNo; set => streetNo = value; }
         public string SecondLineAddress { get => secondLineAddress; set => secondLineAddress = value; }
