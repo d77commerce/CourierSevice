@@ -2,6 +2,7 @@
 using CourierSevice.Core.Contracts;
 using PersonsAndCustomers;
 using PersonsAndCustomers.interfacePersonsAndCustomers;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,7 +50,7 @@ namespace CourierSevice
                        .Split(",", StringSplitOptions.RemoveEmptyEntries);
                         IPerson person = new Customer(input[0], input[1], input[2]);
                         Console.WriteLine($"New Customer    {input[0]} - Add");
-                        person.PhoneNo = int.Parse(input[3]);
+                        //person.PhoneNo = int.Parse(input[3]);
                        
                     }
                     else if (choice == "3")
@@ -60,10 +61,18 @@ namespace CourierSevice
 
 
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
 
+                    Console.WriteLine("Something went wrong.");
+                    Console.WriteLine(e.Message);
                     throw;
+                }
+                finally
+                {
+                    
+                    Console.WriteLine("The 'try catch' is finished.");
+                  //  Run();
                 }
 
             }
