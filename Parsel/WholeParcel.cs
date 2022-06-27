@@ -13,14 +13,14 @@ namespace Parsel
 
         public WholeParcel()
         {
-
+            
             _parcels = new List<PartOfParcel>();
         }
         public int Id { get; set; }
 
-        public void AddParcel()
+        public void AddParcel(PartOfParcel partOfParcel)
         {
-            _parcels .Add(new PartOfParcel());
+            _parcels .Add(partOfParcel);
         }
     }
 }

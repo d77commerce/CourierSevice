@@ -48,10 +48,14 @@ namespace CourierSevice
                         Console.WriteLine("Fill -> Name,Family and email ");
                         string[] input = Console.ReadLine()
                        .Split(",", StringSplitOptions.RemoveEmptyEntries);
-                        IPerson person = new Customer(input[0], input[1], input[2]);
-                        Console.WriteLine($"New Customer    {input[0]} - Add");
-                        //person.PhoneNo = int.Parse(input[3]);
+                        IPerson person = new Customer(input[0], input[1], input[2], int.Parse(input[3]));
 
+                        if (input.Length > 4)
+                        {
+                            person.DataOfBirth = int.Parse(input[4]);
+                        }
+
+                        Console.WriteLine($"New Customer    {input[0]} - Add");
                     }
                     else if (choice == "3")
                     {

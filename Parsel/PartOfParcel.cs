@@ -4,7 +4,16 @@ namespace Parsel
 {
     public class PartOfParcel : IParcel
     {
-       public int Id { get; set; }
+        public PartOfParcel(int id, double kg, double height, double width, double length, bool isFragile)
+        {
+            Id = id;
+            Kg = kg;
+            Height = height;
+            Width = width;
+            Length = length;
+            IsFragile = isFragile;
+        }
+        public int Id { get; set; }
       public  double Kg { get; set; }
       public  double Height { get; set; }
        public double Width { get; set; }
