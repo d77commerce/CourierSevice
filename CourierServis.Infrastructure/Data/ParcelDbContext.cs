@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using CourierService.Infrastructure.Data.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourierServis.Infrastructure
+namespace CourierService.Infrastructure.Data
 {
     public class ParcelDbContext : IdentityDbContext
     {
-        public ParcelDbContext(DbContextOptions options) : base(options)
+        public ParcelDbContext(DbContextOptions<ParcelDbContext> options) : base(options)
         {
         }
 
@@ -18,5 +19,8 @@ namespace CourierServis.Infrastructure
         {
             base.OnModelCreating(builder);
         }
+
+        public DbSet<Parcel> Parcels { get; set; } = null!;
+        public DbSet<PartOfParcel> PartOfParcels { get; set; } = null!;
     }
 }

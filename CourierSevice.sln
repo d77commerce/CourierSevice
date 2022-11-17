@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourierSevice", "CourierSevice\CourierSevice.csproj", "{6316F402-7C77-414E-991C-C9166ED29538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourierSevice.Core", "CourierSevice\CourierSevice.Core.csproj", "{6316F402-7C77-414E-991C-C9166ED29538}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parcel", "Parsel\Parcel.csproj", "{32F1D4DC-15F7-4AE7-B2B7-F71BBDB77CB5}"
 EndProject
@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleOrderDoc", "SingleOrd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCustomerOrder", "WebCustomerOrder\WebCustomerOrder.csproj", "{2AEDFF86-0129-4218-A9F6-7E67B194FBDF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourierServiceAPI", "CourierServiceAPI\CourierServiceAPI.csproj", "{FF73B33C-DE04-4191-A193-DD3A42DE4695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourierService.API", "CourierServiceAPI\CourierService.API.csproj", "{FF73B33C-DE04-4191-A193-DD3A42DE4695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourierServis.Infrastructure", "CourierServis.Infrastructure\CourierServis.Infrastructure.csproj", "{78E9439E-EC24-415F-964A-49E5F92AB4AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourierService.Infrastructure", "CourierServis.Infrastructure\CourierService.Infrastructure.csproj", "{78E9439E-EC24-415F-964A-49E5F92AB4AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
