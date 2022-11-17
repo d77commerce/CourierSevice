@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Parsel
 {
-    public class WholeParcel
+    public class Parcel
     {
 
         private readonly List<PartOfParcel> _parcels;
 
-        public WholeParcel()
+        public Parcel()
         {
             
             _parcels = new List<PartOfParcel>();

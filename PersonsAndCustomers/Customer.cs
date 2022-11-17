@@ -9,9 +9,11 @@ namespace PersonsAndCustomers
 {
     public class Customer : Person
     {
-        public Customer(string name, string familyName, string email, int phoneNo)
-            : base(name, familyName)
+        public Customer(string name, string familyName, string email, string phoneNo)
+            : base()
         {
+            Name = name;
+            FamilyName = familyName;
             Email = email;
             PhoneNo = phoneNo;
            

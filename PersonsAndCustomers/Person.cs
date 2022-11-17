@@ -9,37 +9,31 @@ namespace PersonsAndCustomers
 {
     public abstract class Person : IPerson
     {
-        private string name;
-        private string secondName;
-        private string familyName;
-        private int dataOfBirth;
-        private string email;
-        private int phoneNo;
-        private string city;
-        private string street;
-        private string streetNo;
-        private string secondLineAddress;
-        private string thirdLineAddress;
-        private string postCode;
+      
+        private string name = null!;
+        private string secondName = null!;
+        private string familyName = null!;
+        private int dataOfBirth ;
+        private string email = null!;
+        private string phoneNo = null!;
+        private string city = null!;
+        private string street = null!;
+        private string streetNo = null!;
+        private string secondLineAddress = null!;
+        private string thirdLineAddress = null!;
+        private string postCode = null!;
 
-        public Person(string name, string familyName)
+        public Person()
         {
-            Name = name;
-            FamilyName = familyName;
 
-            int zoneA = this.Name.Length;
-            int zoneB = this.FamilyName.Length;
-            int uniNum = zoneA + zoneB + 200000000;
-            PersonalID = uniNum;
         }
-
+        public int Id { get; set; }
         public string Name { get => name; set => name = value; }
         public string FamilyName { get => familyName; set => familyName = value; }
         public string Email { get => email; set => email = value; }
         public int DataOfBirth { get => dataOfBirth; set => dataOfBirth = value; }
         public string SecondName { get => secondName; set => secondName = value; }
-
-        public int PhoneNo { get => phoneNo; set => phoneNo = value; }
+        public string PhoneNo { get => phoneNo; set => phoneNo = value; }
         public string Sity { get => city; set => city = value; }
         public string Street { get => street; set => street = value; }
         public string StreetNo { get => streetNo; set => streetNo = value; }
@@ -47,7 +41,7 @@ namespace PersonsAndCustomers
         public string ThirdLineAddress { get => thirdLineAddress; set => thirdLineAddress = value; }
         public string PostCode { get => postCode; set => postCode = value; }
         public int PersonalID { get; }
-
+        
     }
 }
 

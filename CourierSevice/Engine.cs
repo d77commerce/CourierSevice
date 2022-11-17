@@ -38,7 +38,7 @@ namespace CourierSevice
                         string[] input = Console.ReadLine()
                        .Split(",", StringSplitOptions.RemoveEmptyEntries);
                         IPerson person = new Worker(input[0], input[1], input[2], int.Parse(input[3])
-                            , int.Parse(input[4]), input[5], input[6], input[7], input[8]);
+                            ,  (input[4]), input[5], input[6], input[7], input[8]);
 
                         Console.WriteLine($"New Worker    {input[0]} - Add");
 
@@ -48,7 +48,7 @@ namespace CourierSevice
                         Console.WriteLine("Fill -> Name,Family and email ");
                         string[] input = Console.ReadLine()
                        .Split(",", StringSplitOptions.RemoveEmptyEntries);
-                        IPerson person = new Customer(input[0], input[1], input[2], int.Parse(input[3]));
+                        IPerson person = new Customer(input[0], input[1], input[2],(input[3]));
 
                         if (input.Length > 4)
                         {
