@@ -15,8 +15,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CourierServis.Infrastructure\CourierService.Infrastructure.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -1,7 +1,7 @@
 ﻿
 using CourierSevice.Core.Contracts;
-using PersonsAndCustomers;
-using PersonsAndCustomers.interfacePersonsAndCustomers;
+using Persons;
+using Persons.interfacePersonsAndCustomers;
 
 using System;
 using System.Collections.Generic;

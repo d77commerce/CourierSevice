@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PersonsAndCustomers.interfacePersonsAndCustomers
+namespace Persons.interfacePersonsAndCustomers
 {
     public interface IPerson
     {

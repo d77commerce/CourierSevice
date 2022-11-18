@@ -7,15 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourierSevice.Core", "Couri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parcel", "Parsel\Parcel.csproj", "{32F1D4DC-15F7-4AE7-B2B7-F71BBDB77CB5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonsAndCustomers", "PersonsAndCustomers\PersonsAndCustomers.csproj", "{5D989F0E-538C-4E93-8AC0-F84736C518A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "PersonsAndCustomers\Persons.csproj", "{5D989F0E-538C-4E93-8AC0-F84736C518A7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleOrderDoc", "SingleOrderDoc\SingleOrderDoc.csproj", "{21A7231B-FDC8-4211-898D-4AA2FB45D2BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCustomerOrder", "WebCustomerOrder\WebCustomerOrder.csproj", "{2AEDFF86-0129-4218-A9F6-7E67B194FBDF}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourierService.API", "CourierServiceAPI\CourierService.API.csproj", "{FF73B33C-DE04-4191-A193-DD3A42DE4695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourierService.Infrastructure", "CourierServis.Infrastructure\CourierService.Infrastructure.csproj", "{78E9439E-EC24-415F-964A-49E5F92AB4AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourierService.Infrastructure", "CourierServis.Infrastructure\CourierService.Infrastructure.csproj", "{78E9439E-EC24-415F-964A-49E5F92AB4AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		{21A7231B-FDC8-4211-898D-4AA2FB45D2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21A7231B-FDC8-4211-898D-4AA2FB45D2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21A7231B-FDC8-4211-898D-4AA2FB45D2BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AEDFF86-0129-4218-A9F6-7E67B194FBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AEDFF86-0129-4218-A9F6-7E67B194FBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AEDFF86-0129-4218-A9F6-7E67B194FBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AEDFF86-0129-4218-A9F6-7E67B194FBDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FF73B33C-DE04-4191-A193-DD3A42DE4695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF73B33C-DE04-4191-A193-DD3A42DE4695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF73B33C-DE04-4191-A193-DD3A42DE4695}.Release|Any CPU.ActiveCfg = Release|Any CPU

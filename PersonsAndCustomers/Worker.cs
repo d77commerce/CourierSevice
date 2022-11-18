@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PersonsAndCustomers
+namespace Persons
 {
     public class Worker : Person
     {
@@ -23,5 +23,7 @@ namespace PersonsAndCustomers
             PostCode= postCode;
 
         }
+
+        public int MyProperty { get; set; }
     }
 }

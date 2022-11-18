@@ -2,9 +2,9 @@
 
 namespace Parsel
 {
-    public class PartOfParcel : IParcel
+    public class PartsOfParcel : IParcel
     {
-        public PartOfParcel(int id, double kg, double height, double width, double length, bool isFragile)
+        public PartsOfParcel(int id, double kg, double height, double width, double length, bool isFragile)
         {
             Id = id;
             Kg = kg;

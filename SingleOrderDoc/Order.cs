@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using PersonsAndCustomers;
+using Persons;
 using Parsel;
-using PersonsAndCustomers.interfacePersonsAndCustomers;
+using Persons.interfacePersonsAndCustomers;
 
 Console.WriteLine("Hello, World!");
 

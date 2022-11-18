@@ -1,11 +1,11 @@
-﻿using PersonsAndCustomers.Repositories.Contracts;
+﻿using Persons.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PersonsAndCustomers.Repositories
+namespace Persons.Repositories
 {
     public class PersonsRepository : IRepository<Person>
     {

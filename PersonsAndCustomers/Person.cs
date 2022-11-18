@@ -1,11 +1,11 @@
-﻿using PersonsAndCustomers.interfacePersonsAndCustomers;
+﻿using Persons.interfacePersonsAndCustomers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PersonsAndCustomers
+namespace Persons
 {
     public abstract class Person : IPerson
     {
@@ -40,7 +40,7 @@ namespace PersonsAndCustomers
         public string SecondLineAddress { get => secondLineAddress; set => secondLineAddress = value; }
         public string ThirdLineAddress { get => thirdLineAddress; set => thirdLineAddress = value; }
         public string PostCode { get => postCode; set => postCode = value; }
-        public int PersonalID { get; }
+     
         
     }
 }

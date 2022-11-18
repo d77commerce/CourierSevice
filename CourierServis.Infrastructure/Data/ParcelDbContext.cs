@@ -1,4 +1,6 @@
-﻿using CourierService.Infrastructure.Data.Models;
+﻿
+using CourierService.Infrastructure.ModelsDto;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CourierService.Infrastructure.Data
@@ -13,8 +15,8 @@ namespace CourierService.Infrastructure.Data
         {
             base.OnModelCreating(builder);
         }
-
+      
         public DbSet<Parcel> Parcels { get; set; } = null!;
-        public DbSet<PartOfParcel> PartOfParcels { get; set; } = null!;
+       
     }
 }

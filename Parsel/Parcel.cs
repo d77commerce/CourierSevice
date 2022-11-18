@@ -9,18 +9,40 @@ namespace Parsel
     public class Parcel
     {
 
-        private readonly List<PartOfParcel> _parcels;
+        private readonly List<PartsOfParcel> partOfParcel;
 
-        public Parcel()
+        public Parcel(List<PartsOfParcel> _partsOfParcel)
         {
-            
-            _parcels = new List<PartOfParcel>();
-        }
-        public int Id { get; set; }
 
-        public void AddParcel(PartOfParcel partOfParcel)
-        {
-            _parcels .Add(partOfParcel);
+            partOfParcel = _partsOfParcel;
         }
+        public List<PartsOfParcel> Parts
+        {
+            get { return partOfParcel; }
+            set { }
+        }
+        public int Pieces
+        {
+            get { return Pieces; }
+            set
+            {
+                int count = partOfParcel.Count;
+                Pieces = count;
+            }
+        }
+       
+
+        public double TotalKg
+        {
+            get { return TotalKg; }
+            set
+            {
+                double kg = 0.000;
+               partOfParcel.ForEach(p =>p.Kg += kg);
+                TotalKg = kg;
+            }
+        }
+
+
     }
 }
