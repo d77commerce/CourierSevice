@@ -18,8 +18,8 @@ namespace CourierService.Infrastructure.Data.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public int PartOfParcelId { get; set; }
-        [ForeignKey(nameof(PartOfParcel))]
+       // public int PartOfParcelId { get; set; }
+       // [ForeignKey(nameof(PartOfParcel))]
         //public ICollection<PartOfParcel> PartOfParcels { get; set; } = new List<PartOfParcel>();
         public List<PartOfParcel> PartOfParcel { get; set; }
     }
